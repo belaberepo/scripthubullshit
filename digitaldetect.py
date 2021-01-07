@@ -2,7 +2,6 @@ import time
 
 from selenium.common.exceptions import NoSuchElementException
 import os
-from settings import seleniumpath
 from selenium import webdriver
 from twilio.rest import Client
 chrome_options = webdriver.ChromeOptions()
@@ -27,7 +26,7 @@ message2 = clientd.messages.create(
     body="starting ps5 digital detector " + 'https://www.bestbuy.ca/en-ca/product/playstation-5-digital-edition-console-online-only/14962184')
 site = "https://www.bestbuy.ca/en-ca/product/playstation-5-digital-edition-console-online-only/14962184"
 #driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
-driver = webdriver.Chrome(executable_path=seleniumpath)
+driver = webdriver.Chrome(executable_path="/home/CuteWolfie/Desktop/bot/chromedriver")
 driver.get(site)
 while True:
     time.sleep(5)
