@@ -24,7 +24,7 @@ message2 = clientd.messages.create(
     from_="+19704428794",
     body="starting ps5 fat detector " + site)
 #driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
-driver = webdriver.Chrome(executable_path="/home/CuteWolfie/Desktop/bot/chromedriver")
+driver = webdriver.Chrome(executable_path="/home/CuteWolfie/Desktop/pytohn/chromedriver")
 driver.get(site)
 while True:
     time.sleep(5)
